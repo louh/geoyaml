@@ -1,6 +1,18 @@
 # geoyaml
 
-Write or parse GeoJSON as YAML.
+Write or parse GeoJSON as YAML. Like this:
+
+```yaml
+type: FeatureCollection
+features:
+  - geometry: 
+      type: Point
+      coordinates: 
+        - 37.96875
+        - 37.71859032558816
+    properties:
+      name: Hello World
+```
 
 Does the world need this? Not really. So why did I make it? Because it could be done.
 
