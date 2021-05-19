@@ -13,6 +13,10 @@
     "geoyaml",
     "yaml"
   ],
+  "files": [
+    "lib",
+    "CHANGELOG.md"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test/index.js"
