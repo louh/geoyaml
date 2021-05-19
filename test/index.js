@@ -47,6 +47,10 @@ describe('geoyaml.loadAll', function () {
       string += JSON.stringify(doc) + '\n'
     })
 
+    // yaml.loadAll should have a return value of `undefined` when
+    // an iterator function is provided, as it is here
+    assert.strictEqual(result, undefined)
+
     // parsed GeoYAML and NDJSON should be equal
     assert.strictEqual(string, ndjson)
   })
