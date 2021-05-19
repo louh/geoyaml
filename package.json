@@ -1,0 +1,20 @@
+{
+  "name": "geoyaml",
+  "version": "0.1.0-alpha",
+  "description": "Write or parse GeoJSON as YAML",
+  "author": "Lou Huang <lou@louhuang.com>",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "keywords": [
+    "geojson",
+    "geoyaml",
+    "yaml"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@mapbox/geojsonhint": "^3.0.1",
+    "js-yaml": "^4.1.0"
+  }
+}
