@@ -1,0 +1,10 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "McNears Beach"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-122.452336, 37.992205]
+  }
+}

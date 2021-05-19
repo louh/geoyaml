@@ -5,25 +5,34 @@ Write or parse GeoJSON as YAML. Like this:
 ```yaml
 type: FeatureCollection
 features:
-  - geometry: 
+  - geometry:
       type: Point
-      coordinates: 
+      coordinates:
         - 37.96875
         - 37.71859032558816
     properties:
       name: Hello World
 ```
 
+Wow, so neat and so clean. No brackets or commas or quotation marks. ugh punctuation is the worst
+
 Does the world need this? Not really. So why did I make it? Because it could be done.
 
-**NOTE:** this is an _alpha_ stage project which means I wrote it moments before committing it and publishing an npm package, without testing or even bothering to try it out yet, please use cautiously if you happen to find it
+## Technical details
+
+This is mostly just a wrapper around the [js-yaml](https://www.npmjs.com/package/js-yaml) library with the added step of running [geojsonhint](https://github.com/mapbox/geojsonhint) so you know if the output isn't valid GeoJSON. This is not exactly great dependency hygiene but I'll be damned if anyone else occupies this package namespace.
 
 ## Usage
 
-This is mostly just a wrapper around the [js-yaml](https://www.npmjs.com/package/js-yaml) library with the added step of running [geojsonhint](https://github.com/mapbox/geojsonhint) so you know if the output isn't valid GeoJSON.
+In a JavaScript module:
 
 ```js
 import geoyaml from 'geoyaml'
 
+// `doc` is a string that is the contents of a YAML file
 const geojson = geoyaml.load(doc)
 ```
+
+From the command line:
+
+**TODO**
