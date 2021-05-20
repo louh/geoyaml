@@ -1,6 +1,6 @@
 {
   "name": "geoyaml",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Write or parse GeoJSON as YAML",
   "author": "Lou Huang <lou@louhuang.com>",
   "license": "Apache-2.0",
