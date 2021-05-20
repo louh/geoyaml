@@ -4,7 +4,7 @@ const nodePolyfills = require('rollup-plugin-node-polyfills')
 const { terser } = require('rollup-plugin-terser')
 
 const plugins = [ nodePolyfills(), nodeResolve(), commonjs() ]
-const umd_out_base = { format: 'umd', name: 'geoyaml', exports: 'named' }
+const umd_out_base = { format: 'umd', name: 'geoyaml', exports: 'default' }
 
 module.exports = [
   // es5
