@@ -19,13 +19,14 @@
   ],
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha test/index.js"
+    "test": "nyc --reporter=lcov mocha"
   },
   "dependencies": {
     "@mapbox/geojsonhint": "^3.0.1",
     "js-yaml": "^4.1.0"
   },
   "devDependencies": {
-    "mocha": "^8.4.0"
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0"
   }
 }
